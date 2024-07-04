@@ -12,22 +12,22 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Montserrat", sans-serif;
+  --default-font: "montserrat", sans-serif;
   --heading-font: "Balto" , sans-serif; 
   --Nav-font: "MONTSERRAT" , sans-serif; 
 }
 
 @font-face {
-  font-family: fuenterandom;
-  src: url("FlexStart/tipografia/Balto-Black.eot FlexStart/tipografia/Balto-Black.ttf FlexStart/tipografia/Balto-Black.woff FlexStart/tipografia/Balto-Black.woff2 FlexStart/tipografia/Balto-BlackItalic.eot FlexStart/tipografia/Balto-BlackItalic.ttf FlexStart/tipografia/Balto-BlackItalic.woff FlexStart/tipografia/Balto-BlackItalic.woff2 FlexStart/tipografia/Balto-Bold.eot FlexStart/tipografia/Balto-Bold.ttf FlexStart/tipografia/Balto-Bold.woff FlexStart/tipografia/Balto-Bold.woff2 FlexStart/tipografia/Balto-BoldItalic.eot FlexStart/tipografia/Balto-BoldItalic.ttf");
+  font-family: 'balto';
+  src: url('FlexStart/tipografia')
 }
 
-/* Repite este bloque para cada variante de la fuente (Thin, Book, Ultra, etc.) */
+
 
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #f2f2ef; /* Background color for the entire website, including individual sections */
+  --background-color: #f2f2ef00; /* Background color for the entire website, including individual sections */
   --default-color: #000000; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #000000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -192,21 +192,22 @@ h6 {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+
 #hero {
   position: relative;
   overflow: hidden;
-  height: 100vh; /* Altura completa de la ventana */
-  background: #f2f2ef00; /* Color de fondo opcional */
+  height: 715px; 
+  background: #f2f2ef00; 
 }
 
 .hero-img {
-  position: absolute;s
+  position: absolute;
   top: 0;
   left: 0;
-  width: 120%;
-  height: 100%;
-  z-index: 0; /* Coloca la imagen detrás del contenido */
-  overflow: hidden; /* Para asegurar que la imagen no se desborde */
+  width: 100%;
+  height: 90%;
+  z-index: 0; /
+  overflow: hidden; 
 }
 
 .hero-img img {
@@ -1019,7 +1020,7 @@ section,
   font-family: "balto" sans-serif;
   font-size: 4px;
   font-weight: 300;
-  color: #ff6600;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -1095,73 +1096,74 @@ section,
 --------------------------------------------------------------*/
 
 .values {
-  color: var(--default-color);
-  font-family: 'Montserrat', sans-serif; /* Establece Montserrat como la fuente */
-  font-size: 15px;
-  padding: 0px;
+  padding: px;
   text-align: center;
   transition: 0.3s;
-  height: 100%;
+  height: 500px;
   border: 0;
+  background-image: url("FlexStart/imagenesnuevasnikk/FONDO 123-01.png");
+  background-size: cover; 
+  background-position: center; 
+  position: relative;
 }
 
-
-
-.Values .container .section-title h2 {
-font-family: montserrat;
+.values h2 {
+font-family: "montserrat";
+font-size: 16px;
 color: #000000;
 font-weight: 300;
 }
 
-.Values .container .section-title p {
+.values p {
   font-family: "balto" sans-serif;
-  font-size: 80px;
+  font-size: 36px;
   font-weight: 1000;
+  margin-top: auto;
 }
 
-
-/* Eliminar estas reglas */
 .values img {
-  padding: 0px 1px;
-  transition: 0.5s;
+  height: 500px;
+  transition: 0.2s;
   transform: scale(0.2);
   text-align: center;
-  margin: -150px 0 0px 0;
+  margin: 1px 0 0px 0;
+  margin-top: -200px;
 }
 
 .values h3 {
   font-size: 18px;
-  font-family: 'Balto', sans-serif; /* Establece Montserrat como la fuente */
+  font-family: 'balto', sans-serif; 
   font-weight: 900;
   margin-bottom: 1px;
   margin: -150px 0 0px 0px;
   text-align: center;
-  
+  padding: 0px 0px 0px 0px
 }
 
-
-.values :hover img {
-  transform: scale(0.3);
+.values h4 {
+  font-size: 16px;
+  font-family: 'montserrat', sans-serif; /* Establece Montserrat como la fuente */
+  font-weight: 400;
+  padding: 8px;
 }
-
 
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
 .stats {
-  background-color: #ff6600; /* Fondo naranja */
-  color: rgb(0, 0, 0); /* Texto blanco para contraste */
-  padding: 50px 0; /* Ajuste de padding para espacio interior */
-  text-align: center; /* Centrar contenido */
-  width: 100%; /* Ancho de la sección al 100% *
+  background-color: #ff6600; 
+  color: rgb(0, 0, 0); 
+  padding: 50px 0; 
+  text-align: center; 
+  width: 100%; 
   } 
 
 .stats .stats-item {
-  background-color: var(--surface-color); /* Color de fondo de los items */
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0); /* Sombra (puedes ajustar según necesites) */
+  background-color: var(--surface-color); 
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0); 
   padding: 1px;
-  margin-bottom: 2px; /* Espacio entre items */
-  text-align: center; /* Centrar contenido dentro de los items */
+  margin-bottom: 2px; 
+  text-align: center; 
 }
 
 .stats .stats-item {
@@ -1219,65 +1221,58 @@ features .feature-box {
   color: var(--contrast-color);
 }.
 
-.features {
-  background-image: url(FlexStart/imagenes nuevas nikk/diseñoheader1 1.png);
-  .background-position: :left
-}.
 /*--------------------------------------------------------------
 # Alt Features Section
 --------------------------------------------------------------*/
 .features {
   position: relative;
-  background-color: #ffffff00; /* Fondo blanco para asegurar que el texto sea legible */
+  background-color: #6b020200; 
+  position: relative;
+  padding: 50px;
+  color: #41343400; 
+  text-align: center; 
 }
 
-.background-image {
-  position: relative;
-  background-image: url(FlexStart/imagenes nuevas nikk/fondo modasos.png); /* Ruta a tu imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  padding: 30px 0; /* Ajusta el espacio interior según sea necesario */
-  color: #000000; /* Color de texto blanco para contraste */
-  text-align: center; /* Centra el texto */
-}
-
-.section-content {
-  position: relative;
-  z-index: 1; /* Asegura que el texto esté por encima de la imagen de fondo */
-}
 
 .section-content h2 {
-  font-size: 18px; /* Ajusta el tamaño del título según sea necesario */
-  margin-bottom: 0px; /* Espacio inferior entre párrafos */
+  font-size: 18px; 
+  text-align: center;
+  margin-bottom: 0px;
   font-family: montserrat;
   font-weight: 300;
 }
 
-.section-content p {
-  font-size: 35px; /* Ajusta el tamaño del párrafo según sea necesario */
-  margin-bottom: 0px; /* Espacio inferior entre párrafos */
-  font-family: balto;
-  font-weight: 1000;
-}
 .section-content h3 {
-  font-size: 32px; /* Ajusta el tamaño del párrafo según sea necesario */
-  margin-bottom: 100px; /* Espacio inferior entre párrafos */
+  font-size: 25px; 
+  text-align: center;
+  margin-bottom: 0px; 
   font-family: montserrat;
   font-weight: 400;
 }
-
-/* Estilos adicionales para los elementos dentro de .features pueden añadirse aquí */
-
-/* Estilos para los otros elementos (col-xl-6, feature-box, etc.) como en tu ejemplo */
+.section-content p {
+  font-size: 40px; 
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px; 
+  font-family: balto;
+  font-weight: 1000;
+}
 
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services {
+  background-image: url("FlexStart/imagenesnuevasnikk/fondovenderopa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .services .service-item {
   background-color: #f2f2ef00
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 1 0px rgba(0, 0, 0, 0.1);
   height: 100%;
-  padding: 60px 30px;
+  padding: 30px 20px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
@@ -1322,7 +1317,7 @@ features .feature-box {
   background: var(--accent-color);
   line-height: 0;
   padding: 10px 20px;
-  border-radius: 50px; /* Ajustado a 50px según tu código */
+  border-radius: 50px; 
   transition: background-color 0.5s, color 0.5s;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
 }
@@ -1364,7 +1359,7 @@ features .feature-box {
 }
 
 .services .service-item.item-teal {
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff00;
 }
 
 .services .service-item.item-teal .icon {
@@ -1438,26 +1433,24 @@ features .feature-box {
 
 
 .img-service {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 20px !important; /* Aplica el margen con !important para forzar su aplicación */
+  max-width: 80%;
+  height: center;
+  display: inline-block;
+  margin-bottom: 20px !important;
 }
+
 
 
 .services .service-item:hover .icon {
   background: #000000;
 }
 
-.services {
-  background-image:url("FlexStart/imagenesnuevasnikk/fondovenderopa.png")!important;
-}
 
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
 .pricing .pricing-tem {
-  background-color: var(--surface-color);
+  background-color: #ffffff;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   padding: 40px 20px;
   text-align: center;
@@ -1466,7 +1459,13 @@ features .feature-box {
   overflow: hidden;
   transition: 0.3s;
   height: 100%;
+  border-radius: 50px;
 }
+.pricing {
+  background-image: url("FlexStart/imagenesnuevasnikk/fondo cursos.png");
+  background-position: center;
+  }
+
 
 @media (min-width: 1200px) {
   .pricing .pricing-tem:hover {
@@ -1499,7 +1498,7 @@ features .feature-box {
 
 .pricing .price {
   font-size: 36px;
-  color: var(--heading-color);
+  color: #ffffff
   font-weight: 600;
   font-family: var(--heading-font);
 }
@@ -1511,7 +1510,7 @@ features .feature-box {
 }
 
 .pricing .price span {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #000000, transparent 50%);
   font-size: 16px;
   font-weight: 300;
 }
@@ -1527,7 +1526,7 @@ features .feature-box {
 .pricing ul {
   padding: 0;
   list-style: none;
-  color: var(--default-color);
+  color: #ff6600
   text-align: center;
   line-height: 22px;
   font-size: 16px;
@@ -1539,7 +1538,7 @@ features .feature-box {
 }
 
 .pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: #ff6600 
   text-decoration: line-through;
 }
 
@@ -1547,19 +1546,18 @@ features .feature-box {
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 50px;
-  color: var(--accent-color);
+  color: #000000; 
+  background-color: #FF6600;
   transition: none;
   font-size: 16px;
-  font-weight: 400;
-  font-family: var(--heading-font);
   font-weight: 600;
-  transition: 0.3s;
-  border: 1px solid var(--accent-color);
+  font-family: var(--heading-font);
+  border: 0px solid var(--accent-color);
 }
 
 .pricing .btn-buy:hover {
   background: var(--accent-color);
-  color: var(--contrast-color);
+  color: #ff6600
 }
 
 .pricing .featured {

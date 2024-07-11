@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'balto';
-  src: url('FlexStart/tipografia') format("truetype")
+  src: url('FlexStart/tipografia/Balto-Bold.ttf') format("truetype")
 }
 
 
@@ -196,7 +196,7 @@ h6 {
 #hero {
   position: relative;
   overflow: hidden;
-  height: 715px; 
+  height: 600px; 
   background: #f2f2ef00; 
 }
 
@@ -855,9 +855,13 @@ section,
 --------------------------------------------------------------*/
 
 .section-title h2{
+  font-family: "balto";
+  font-size: 20px;
+  font-weight: 300;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: -1px;
   position: center;
+  letter-spacing: 1px;
 }
 
 
@@ -875,11 +879,11 @@ section,
 }
 
 .section-title p {
-  color: #059652
+  font-family: balto;
   margin: 10px 0 0 0;
   font-size: 32px;
-  font-weight: 700;
-  font-family: var(--heading-font);
+  font-weight: 1000;
+  text-align: center
 }
 
 .section-title p .description-title {
@@ -1107,6 +1111,13 @@ section,
   position: relative;
 }
 
+@media (min-width: 1200px) {
+  .pricing .pricing-tem:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .values h2 {
 font-family: "montserrat";
 font-size: 16px;
@@ -1294,6 +1305,7 @@ features .feature-box {
   font-size: 32px;
   font-family: "balto"; sans-serif;
   font-weight: 1000;
+  text-align: center;
 }
 
 .services .service-item .icon {
@@ -1456,9 +1468,8 @@ features .feature-box {
 .pricing .pricing-tem {
   background-color: #ffffff;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  padding: 35px 40px;
+  padding: 40px 20px;
   text-align: center;
-  border-radius: 4px;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
@@ -1469,8 +1480,6 @@ features .feature-box {
 .pricing .pricing-tem img {
   width: 150px;
   padding: 20px
-
-
 }
 
 .pricing {
@@ -1493,6 +1502,7 @@ features .feature-box {
   font-weight: 300;
   font-size: 18px;
   margin-bottom: 5px;
+  text-align: center;
 }
 .pricing h3 {
   color: #000000;
@@ -1603,8 +1613,8 @@ features .feature-box {
 
 .faq .faq-container .faq-item h3 {
   font-family: "balto";
-  font-weight: 100;
-  font-size: 6px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 24px;
   margin: 0 30px 0 0;
   transition: 0.3s;
@@ -1670,7 +1680,7 @@ features .feature-box {
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
   padding: 20;
-  margin: 0 auto 20px auto;
+  margin: 50px auto 30px auto;
   list-style: none;
   text-align: center;
 }
@@ -1678,7 +1688,7 @@ features .feature-box {
 
 .portfolio h2 {
   font-family: "balto";
-  font-size: 500px; 
+  font-size: 20px; 
   text-align: center;
   margin-bottom: 0px;
   font-weight: 300;
@@ -1713,6 +1723,7 @@ features .feature-box {
 .portfolio-content img {
   border-radius: 20px;
 }
+
 @media (max-width: 575px) {
   .portfolio .portfolio-filters li {
     font-size: 14px;
@@ -1727,9 +1738,12 @@ features .feature-box {
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  margin: auto;
 }
 
-.portfolio .portfolio-content .portfolio-info {
+
+
+.portfolio .portfolio-content .portfolio-info { 
   opacity: 0;
   position: absolute;
   inset: 0;
@@ -2126,13 +2140,13 @@ features .feature-box {
 --------------------------------------------------------------*/
 
 .contact .info-item {
-  background: color-mix(in srgb, var(--default-color), transparent 100%);
+  background: color-mix(in srgb, var(--default-color), transparent 0%);
   padding: 30px;
 }
 
 .contact  img {
   width: 50%;
-  margin-left: auto; /* Esto mueve la imagen hacia la derecha */
+  margin-left: 450px; /* Esto mueve la imagen hacia la derecha */
   margin-right: 0; /* Asegura que no haya margen a la derecha */
 }
 
@@ -2154,7 +2168,7 @@ features .feature-box {
 
 
 .contact .php-email-form {
-  background: color-mix(in srgb, var(--default-color), transparent 100%);
+  background: color-mix(in srgb, var(--default-color), transparent 0%);
   padding: 30px;
   height: 100%;
 }
@@ -2185,11 +2199,23 @@ features .feature-box {
 
 .contact .php-email-form span {
   background: #000000
-  padding: 90px
+  padding: 10px
   transition: 0.4s;
   border-radius: 0px;
 }
+.contact .php-email-form button[type=submit] {
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  background: #ff6600
+  color: 
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 100px;
+}
 
+}
 .contact .php-email-form span [type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
@@ -2970,8 +2996,8 @@ features .feature-box {
 }
 
 .recent-posts-widget .post-item img {
-  width: 80px;
-  margin-right: 15px;
+  width: 50px;
+  margin-right: 50px;
 }
 
 .recent-posts-widget .post-item h4 {

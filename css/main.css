@@ -1,5 +1,5 @@
 /**
-* Template Name: FlexStart
+* Temrlate Name: FlexStart
 * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
 * Updated: Jun 27 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'balto';
-  src: url('FlexStart/tipografia')
+  src: url('FlexStart/tipografia') format("truetype")
 }
 
 
@@ -49,7 +49,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #f9f9f900;
   --surface-color: #ffffff;
 }
 
@@ -613,7 +613,7 @@ h6 {
   position: relative;
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 25px rgba(168, 98, 98, 0.1);
   display: flex;
   transition: 0.3s;
   border-radius: 4px;
@@ -664,7 +664,7 @@ h6 {
   background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
   font-size: 16px;
-  color: var(--accent-color);
+  color: #ff6600;
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -854,7 +854,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 
-.section-title {
+.section-title h2{
   text-align: center;
   padding-bottom: 60px;
   position: center;
@@ -1096,21 +1096,21 @@ section,
 --------------------------------------------------------------*/
 
 .values {
+  background-color: #000000;
+  background-image: url("FlexStart/imagenesnuevasnikk/fondo123.png");
+  background-size: cover; 
+  height: 500px;
   padding: px;
   text-align: center;
   transition: 0.3s;
-  height: 500px;
-  border: 0;
-  background-image: url("FlexStart/imagenesnuevasnikk/FONDO 123-01.png");
-  background-size: cover; 
-  background-position: center; 
+  border: 100;
   position: relative;
 }
 
 .values h2 {
 font-family: "montserrat";
 font-size: 16px;
-color: #000000;
+color: #ffffff;
 font-weight: 300;
 }
 
@@ -1118,6 +1118,7 @@ font-weight: 300;
   font-family: "balto" sans-serif;
   font-size: 36px;
   font-weight: 1000;
+  color: #ffffff;
   margin-top: auto;
 }
 
@@ -1133,9 +1134,10 @@ font-weight: 300;
 .values h3 {
   font-size: 18px;
   font-family: 'balto', sans-serif; 
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 1px;
   margin: -150px 0 0px 0px;
+  color: #fff;
   text-align: center;
   padding: 0px 0px 0px 0px
 }
@@ -1145,6 +1147,7 @@ font-weight: 300;
   font-family: 'montserrat', sans-serif; /* Establece Montserrat como la fuente */
   font-weight: 400;
   padding: 8px;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -1228,7 +1231,7 @@ features .feature-box {
   position: relative;
   background-color: #6b020200; 
   position: relative;
-  padding: 50px;
+  padding: 0px;
   color: #41343400; 
   text-align: center; 
 }
@@ -1240,29 +1243,30 @@ features .feature-box {
   margin-bottom: 0px;
   font-family: montserrat;
   font-weight: 300;
+  padding: 10px
 }
 
 .section-content h3 {
-  font-size: 25px; 
+  font-size: 23px; 
   text-align: center;
   margin-bottom: 0px; 
   font-family: montserrat;
   font-weight: 400;
+  padding: 20px;
 }
 .section-content p {
   font-size: 40px; 
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 0px; 
   font-family: balto;
   font-weight: 1000;
+  padding: 10px
 }
 
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  background-image: url("FlexStart/imagenesnuevasnikk/fondovenderopa.png");
+  background-image: url(../imagenesnuevasnikk/fondovenderopa.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1452,7 +1456,7 @@ features .feature-box {
 .pricing .pricing-tem {
   background-color: #ffffff;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  padding: 40px 20px;
+  padding: 35px 40px;
   text-align: center;
   border-radius: 4px;
   position: relative;
@@ -1461,8 +1465,17 @@ features .feature-box {
   height: 100%;
   border-radius: 50px;
 }
+
+.pricing .pricing-tem img {
+  width: 150px;
+  padding: 20px
+
+
+}
+
 .pricing {
-  background-image: url("FlexStart/imagenesnuevasnikk/fondo cursos.png");
+  background-color: #000000;
+  background-image: url("FlexStart/imagenesnuevasnikk/fondocursos.png")
   background-position: center;
   }
 
@@ -1475,7 +1488,7 @@ features .feature-box {
 }
 
 .pricing h2 {
-  color: #000000;
+  color: #fff8f8;
   font-family: montserrat;
   font-weight: 300;
   font-size: 18px;
@@ -1489,7 +1502,7 @@ features .feature-box {
   margin-bottom: 5px;
 }
 .pricing p {
-  color: #000000;
+  color: #ffffff;
   font-family: balto;
   font-weight: 1000;
   font-size: 32px;
@@ -1583,13 +1596,15 @@ features .feature-box {
   overflow: hidden;
 }
 
+
 .faq .faq-container .faq-item:last-child {
   margin-bottom: 0;
 }
 
 .faq .faq-container .faq-item h3 {
-  font-weight: 600;
-  font-size: 16px;
+  font-family: "balto";
+  font-weight: 100;
+  font-size: 6px;
   line-height: 24px;
   margin: 0 30px 0 0;
   transition: 0.3s;
@@ -1654,10 +1669,20 @@ features .feature-box {
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
-  padding: 0;
+  padding: 20;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
+}
+
+
+.portfolio h2 {
+  font-family: "balto";
+  font-size: 500px; 
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: 300;
+  padding: 10px 
 }
 
 .portfolio .portfolio-filters li {
@@ -1685,6 +1710,9 @@ features .feature-box {
   margin-right: 0;
 }
 
+.portfolio-content img {
+  border-radius: 20px;
+}
 @media (max-width: 575px) {
   .portfolio .portfolio-filters li {
     font-size: 14px;
@@ -1765,6 +1793,26 @@ features .feature-box {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials h2 {
+    font-size: 18px; 
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: montserrat;
+    font-weight: 300;
+    padding: 10px
+  }
+
+
+.testimonials p {
+  font-size: 40px; 
+  text-align: center;
+  font-family: balto;
+  font-weight: 1000;
+  padding: 10px
+}
+
+
+
 .testimonials .testimonial-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
@@ -1777,6 +1825,7 @@ features .feature-box {
   text-align: center;
   transition: 0.3s;
 }
+
 
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
@@ -1807,6 +1856,9 @@ features .feature-box {
 }
 
 .testimonials .testimonial-item p {
+  font-family: "montserrat";
+  font-size: 14px;
+  font-weight: 400;
   font-style: italic;
   margin: 0 auto 15px auto;
 }
@@ -1833,6 +1885,12 @@ features .feature-box {
 
 .testimonials .swiper-slide {
   opacity: 0.3;
+}
+
+.estrella-img {
+  width: 150px; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Para mantener la proporción */
+  /* Otros estilos si los necesitas */
 }
 
 @media (max-width: 1199px) {
@@ -1985,6 +2043,11 @@ features .feature-box {
 /*--------------------------------------------------------------
 # Recent Posts Section
 --------------------------------------------------------------*/
+.recent-posts .container {
+  max-width: 1000px
+}
+
+
 .recent-posts .post-item {
   background-color: var(--surface-color);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
@@ -2008,7 +2071,7 @@ features .feature-box {
 }
 
 .recent-posts .post-item .post-content {
-  padding: 30px;
+  padding: 20px;
 }
 
 .recent-posts .post-item .post-title {
@@ -2061,32 +2124,37 @@ features .feature-box {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
 .contact .info-item {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  background: color-mix(in srgb, var(--default-color), transparent 100%);
   padding: 30px;
 }
 
-.contact .info-item i {
-  font-size: 38px;
-  line-height: 0;
-  color: var(--accent-color);
+.contact  img {
+  width: 50%;
+  margin-left: auto; /* Esto mueve la imagen hacia la derecha */
+  margin-right: 0; /* Asegura que no haya margen a la derecha */
 }
 
-.contact .info-item h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 20px 0 10px 0;
+.contact .section-title p {
+  font-size: 40px; 
+  text-align: center;
+  font-family: balto;
+  font-weight: 1000;
+  padding: 10px
 }
 
-.contact .info-item p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+.contact .section-title h2 {
+  font-size: 20px; 
+  text-align: center;
+  font-family: balto;
+  font-weight: 300;
+  padding: 0px
 }
+
 
 .contact .php-email-form {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  background: color-mix(in srgb, var(--default-color), transparent 100%);
   padding: 30px;
   height: 100%;
 }
@@ -2097,10 +2165,10 @@ features .feature-box {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 0px;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  background-color: color-mix(in srgb, var(--background-color), transparent 100%);
+  border-color: #000000
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -2115,16 +2183,14 @@ features .feature-box {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border: 0;
-  padding: 10px 30px;
+.contact .php-email-form span {
+  background: #000000
+  padding: 90px
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form span [type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -2965,3 +3031,5 @@ features .feature-box {
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+

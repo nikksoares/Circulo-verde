@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'balto';
-  src: url('FlexStart/tipografia') format("truetype")
+  src: url('FlexStart/tipografia/Balto-Bold.ttf') format("truetype")
 }
 
 
@@ -855,9 +855,13 @@ section,
 --------------------------------------------------------------*/
 
 .section-title h2{
+  font-family: "balto";
+  font-size: 20px;
+  font-weight: 300;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   position: center;
+  letter-spacing: 1px;
 }
 
 
@@ -875,11 +879,11 @@ section,
 }
 
 .section-title p {
-  color: #059652
   margin: 10px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: "Balto"
+  text-align: center;
 }
 
 .section-title p .description-title {
@@ -1294,6 +1298,7 @@ features .feature-box {
   font-size: 32px;
   font-family: "balto"; sans-serif;
   font-weight: 1000;
+  text-align: center;
 }
 
 .services .service-item .icon {
@@ -1469,8 +1474,6 @@ features .feature-box {
 .pricing .pricing-tem img {
   width: 150px;
   padding: 20px
-
-
 }
 
 .pricing {
@@ -1493,6 +1496,7 @@ features .feature-box {
   font-weight: 300;
   font-size: 18px;
   margin-bottom: 5px;
+  text-align: center;
 }
 .pricing h3 {
   color: #000000;
@@ -1603,8 +1607,8 @@ features .feature-box {
 
 .faq .faq-container .faq-item h3 {
   font-family: "balto";
-  font-weight: 100;
-  font-size: 6px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 24px;
   margin: 0 30px 0 0;
   transition: 0.3s;
@@ -1678,7 +1682,7 @@ features .feature-box {
 
 .portfolio h2 {
   font-family: "balto";
-  font-size: 500px; 
+  font-size: 20px; 
   text-align: center;
   margin-bottom: 0px;
   font-weight: 300;
